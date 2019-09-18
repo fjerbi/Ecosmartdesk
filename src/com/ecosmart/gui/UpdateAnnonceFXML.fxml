@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ass" prefHeight="555.0" prefWidth="908.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.UpdateAnnonceFXMLController">
+    <stylesheets>
+        <URL value="@updateeventfxml.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="14.0" layoutY="82.0" text="Nom de l'annonce" textFill="#2c2b2a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="83.0" text="date debut">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="143.0" text="date fin">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="184.0" text="adresse">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="12.0" layoutY="403.0" text="description">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="134.0" text="type">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="482.0" layoutY="211.0" text="heure">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="476.0" layoutY="282.0" text="photo">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nonevent" layoutX="167.0" layoutY="80.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="#eea004" />
+      <JFXTextField fx:id="adresse" layoutX="159.0" layoutY="181.0" onKeyTyped="#fromOnKeyTypedEvent2" prefHeight="25.0" prefWidth="145.0" unFocusColor="#eea004" />
+      <JFXDatePicker fx:id="datedebut" defaultColor="#eea004" layoutX="633.0" layoutY="80.0" />
+      <JFXTimePicker fx:id="heure" defaultColor="#eea004" layoutX="633.0" layoutY="208.0" />
+      <TextArea fx:id="description" layoutX="106.0" layoutY="368.0" prefHeight="139.0" prefWidth="251.0" promptText="Decrivez votre événement" />
+      <JFXDatePicker fx:id="datefin" defaultColor="#eea004" layoutX="633.0" layoutY="140.0" />
+      <JFXComboBox fx:id="type" layoutX="159.0" layoutY="127.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="#eea004" />
+      <JFXButton id="backtolist" fx:id="backtolist" buttonType="RAISED" layoutX="624.0" layoutY="380.0" onAction="#validUpdate" prefHeight="85.0" prefWidth="207.0" style="-fx-background-color: #42f47d;" text="Enregistrer vos modifications" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="7.0" layoutY="7.0" prefHeight="50.0" prefWidth="908.0" style="-fx-border-width: 5; -fx-background-color: #42f47d;" text="                                      Modifier l' Annonce" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Unicode" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="851.0" layoutY="507.0" onAction="#goToAffichage2" text="Annuler" textFill="#da4a07" />
+      <JFXButton fx:id="aj" layoutX="633.0" layoutY="270.0" onAction="#UpPhoto" prefHeight="25.0" prefWidth="171.0" text="modifier la photo " textFill="#eb5e0d" />
+      <ImageView id="img" fitHeight="150.0" fitWidth="200.0" layoutX="394.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

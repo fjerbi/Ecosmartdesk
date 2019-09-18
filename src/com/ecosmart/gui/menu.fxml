@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="238.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.MenuController">
+   <children>
+      <GridPane prefHeight="540.0" prefWidth="195.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="10.0" prefWidth="77.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="0.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="150.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="170.0" prefWidth="12.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowSpan="8" />
+            <JFXButton fx:id="evenements" onAction="#clickevent" prefHeight="35.0" prefWidth="102.0" text="Evenements" textFill="#282727" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="annonces" prefHeight="37.0" prefWidth="100.0" text="Annonces" textFill="#222121" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="produitsrecycles" prefHeight="52.0" prefWidth="137.0" text="Produits Recyclés" textFill="#1e1d1d" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="associations" prefHeight="44.0" prefWidth="104.0" text="Associations" textFill="#171717" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="reclamations" prefHeight="48.0" prefWidth="116.0" text="Reclamations" textFill="#252424" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="challenges" prefHeight="49.0" prefWidth="104.0" text="Challenges" textFill="#252424" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="utilisateurs" prefHeight="40.0" prefWidth="104.0" text="Utilisateurs" textFill="#1e1d1d" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="dashbord" prefHeight="49.0" prefWidth="104.0" text="DASHBORD" textFill="#282727" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../ressources/img/icons/dart-board.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../ressources/img/icons/listicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../ressources/img/icons/protest.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../ressources/img/icons/packing-3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../ressources/img/icons/collaboration.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../../../ressources/img/icons/office-material-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../../../ressources/img/icons/maps-and-flags-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@../../../ressources/img/icons/icons8-team-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

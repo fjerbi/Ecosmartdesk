@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="676.0" style="-fx-background-color: #d9e0dc;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.BackFXMLController">
+   <stylesheets>
+      <URL value="@backfxml.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane layoutY="550.0" prefHeight="85.0" prefWidth="701.0" style="-fx-background-color: #2E3436;" styleClass="AnchorPane">
+         <children>
+            <Label layoutX="249.0" layoutY="14.0" text="Ecosmart +" textFill="#b8b8b8">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="98.0" layoutX="603.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../ressources/img/logos/esprit-onblack.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="135.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@ECOSMART.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="80.0" prefWidth="701.0">
+         <children>
+            <ImageView fx:id="btn_profile" fitHeight="62.0" fitWidth="52.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" styleClass="btn">
+               <image>
+                  <Image url="@../../../ressources/img/icons/icons8-team-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_event" fitHeight="52.0" fitWidth="149.0" layoutX="312.0" layoutY="14.0" onMouseClicked="#handleButtonAction" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" styleClass="btn">
+               <image>
+                  <Image url="@../../../ressources/img/icons/logo1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btn_user" fitHeight="52.0" fitWidth="52.0" layoutX="633.0" layoutY="14.0" onMousePressed="#handleButtonAction" pickOnBounds="true" preserveRatio="true" styleClass="btn">
+               <image>
+                  <Image url="@../../../ressources/img/icons/icons8-administrator-male-64.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anch_profile" layoutY="84.0" prefHeight="471.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="86.0" layoutY="200.0" text="ProfileAnchorPane">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="33.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../ressources/img/icons/pointer.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="pan_profile" prefHeight="471.0" prefWidth="701.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anch_shop" layoutY="84.0" prefHeight="471.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="104.0" layoutY="200.0" text="ShopAnchorPane">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="149.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../ressources/img/icons/pointer.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="pan_shop" prefHeight="471.0" prefWidth="701.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anch_event" layoutY="84.0" prefHeight="471.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="94.0" layoutY="200.0" text="EventAnchorPane">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="279.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../ressources/img/icons/pointer.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="pan_event" prefHeight="471.0" prefWidth="701.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anch_workshop" layoutY="84.0" prefHeight="471.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="32.0" layoutY="200.0" text="WorkshopAnchorPane">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="408.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../ressources/img/icons/pointer.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="pan_workshop" prefHeight="471.0" prefWidth="701.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anch_local" layoutY="84.0" prefHeight="471.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="101.0" layoutY="200.0" text="LocalAnchorPane">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="530.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../ressources/img/icons/pointer.png" />
+               </image>
+            </ImageView>
+            <AnchorPane fx:id="pan_local" prefHeight="471.0" prefWidth="701.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anch_user" layoutY="84.0" prefHeight="471.0" prefWidth="701.0" style="-fx-background-color: #ffffff;" visible="false">
+         <children>
+            <Label layoutX="111.0" layoutY="200.0" text="UserAnchorPane">
+               <font>
+                  <Font size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="30.0" fitWidth="13.0" layoutX="653.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../../ressources/img/icons/pointer.png" />
+               </image>
+            </ImageView>
+           
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

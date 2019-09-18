@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.logo {
+    -fx-effect: dropshadow(three-pass-box, rgba(64,168,74,0.8), 10, 0, 0, 0);
+}
+.text-field {
+    -fx-background-color: #a9a9a9 , f9f9f9 , f9f9f9;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-prompt-text-fill: gray;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , f9f9f9 , f9f9f9;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+
+}
+
+.text-area {
+    -fx-background-color: #a9a9a9 , f9f9f9 , f9f9f9;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-prompt-text-fill: green;
+}
+.background {
+    -fx-background-color: #a9a9a9 , f9f9f9 , f9f9f9;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-prompt-text-fill: gray;
+}

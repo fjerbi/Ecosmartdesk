@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="563.0" prefWidth="962.0" style="-fx-background-color: #DCDCDC;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.DashbordController">
+   <stylesheets>
+      <URL value="@affichechallenge.css" />
+   </stylesheets>
+   <children>
+      <AnchorPane prefHeight="95.0" prefWidth="962.0" style="-fx-background-color: #9CC900;">
+         <children>
+            <JFXHamburger fx:id="menuBTN" layoutX="30.0" layoutY="12.0" />
+            <ImageView fx:id="profile" fitHeight="45.0" fitWidth="54.0" layoutX="871.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../ressources/img/icons/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username" layoutX="721.0" layoutY="23.0" prefHeight="18.0" prefWidth="127.0" text="Label" />
+            <Label fx:id="mail" layoutX="721.0" layoutY="41.0" prefHeight="18.0" prefWidth="120.0" style="-fx-font: 10px;" text="Label" />
+         </children>
+      </AnchorPane>
+      <JFXDrawer fx:id="menu" layoutY="45.0" prefHeight="524.0" prefWidth="177.0" />
+   </children>
+</AnchorPane>

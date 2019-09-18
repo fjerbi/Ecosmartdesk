@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="908.0" style="-fx-background-color: #f9f9f9;" stylesheets="@loginfxml.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.ConfirmAccountFXMLController">
+   <children>
+      <JFXTextField fx:id="tfemail" alignment="CENTER" focusColor="#40a84a" layoutX="289.0" layoutY="247.0" prefWidth="300.0" promptText="Saisir Email" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="tftoken" alignment="CENTER" focusColor="#40a84a" layoutX="289.0" layoutY="359.0" prefHeight="44.0" prefWidth="300.0" promptText="Coller code de confirmation" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="392.0" layoutY="456.0" onAction="#ConfirmAccount" style="-fx-background-color: #7af442;" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lbconf" layoutX="532.0" layoutY="461.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="178.0" fitWidth="269.0" layoutX="292.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ressources/img/images/CONFIRM.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

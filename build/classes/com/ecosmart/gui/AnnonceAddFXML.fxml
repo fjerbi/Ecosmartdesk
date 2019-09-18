@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anch" prefHeight="555.0" prefWidth="908.0" style="-fx-background-color: #ffffff; -fx-border-color: black; -fx-border-width: 7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.AnnonceAddFXMLController">
+   <children>
+      <Label layoutX="43.0" layoutY="77.0" text="Titre de l'annonce " textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="516.0" layoutY="81.0" text="date debut" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="516.0" layoutY="140.0" text="date fin" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="193.0" text="adresse" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="406.0" text="description" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="49.0" layoutY="135.0" text="type" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="516.0" layoutY="207.0" text="heure" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="515.0" layoutY="266.0" text="photo" textFill="#07d7aa">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <JFXTextField fx:id="nonevent" layoutX="225.0" layoutY="73.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="#06e0bc" />
+      <JFXTextField fx:id="adresse" layoutX="220.0" layoutY="189.0" onKeyTyped="#fromOnKeyTypedEvent" prefHeight="25.0" prefWidth="145.0" promptText="Avenue,rue,Ville" unFocusColor="#06e0bc">
+         <font>
+            <Font size="10.0" />
+         </font></JFXTextField>
+      <JFXDatePicker fx:id="datedebut" defaultColor="#06e0bc" layoutX="649.0" layoutY="78.0" />
+      <JFXTimePicker fx:id="heure" defaultColor="#06e0bc" layoutX="649.0" layoutY="204.0" />
+      <TextArea fx:id="description" layoutX="172.0" layoutY="378.0" prefHeight="139.0" prefWidth="251.0" promptText="Description de l'annonce" />
+      <JFXDatePicker fx:id="datefin" defaultColor="#06e0bc" layoutX="649.0" layoutY="137.0" />
+      <JFXComboBox fx:id="type" layoutX="220.0" layoutY="132.0" prefHeight="25.0" prefWidth="145.0" unFocusColor="#06e0bc" />
+      <JFXButton fx:id="add" layoutX="590.0" layoutY="405.0" onAction="#EventAdd" prefHeight="85.0" prefWidth="171.0" text="Ajouter l'Annonce" textFill="#06e0bc">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="43.0" prefWidth="879.0" style="-fx-background-color: #42f47d;" text="                                        Ajouter une Annonce" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Unicode" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lon" layoutX="162.0" layoutY="226.0" prefHeight="11.0" prefWidth="84.0" visible="false" />
+      <TextField fx:id="lat" layoutX="264.0" layoutY="226.0" prefHeight="25.0" prefWidth="84.0" visible="false" />
+      <JFXButton fx:id="annuler" buttonType="RAISED" layoutX="829.0" layoutY="505.0" onAction="#goToAffichage" style="-fx-background-color: #42f47d;" text="Annuler" textFill="WHITE" textOverrun="WORD_ELLIPSIS" />
+      <JFXButton fx:id="filechooser" layoutX="649.0" layoutY="265.0" onAction="#selectPhoto" prefHeight="25.0" prefWidth="162.0" style="-fx-border-color: grey; -fx-border-width: 3;" text="Ajouter photo" textFill="#06e0bc" />
+      <ImageView fitHeight="43.0" fitWidth="40.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ressources/img/logos/app.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="img" fitHeight="121.0" fitWidth="171.0" layoutX="470.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

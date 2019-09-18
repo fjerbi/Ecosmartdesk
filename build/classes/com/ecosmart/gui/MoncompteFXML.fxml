@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="hh" prefHeight="555.0" prefWidth="908.0" style="-fx-background-color: #f9f9f9;" stylesheets="@loginfxml.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.MoncompteFXMLController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="181.0" layoutY="22.0" text="Modifier Mes données" textFill="#40a84a">
+         <font>
+            <Font name="NexaLight" size="60.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbgenre" layoutX="330.0" layoutY="307.0" prefHeight="40.0" prefWidth="220.0" promptText="Sexe" />
+      <ComboBox fx:id="txtpays" layoutX="330.0" layoutY="397.0" prefHeight="40.0" prefWidth="220.0" promptText="Pays" />
+      <Button contentDisplay="CENTER" layoutX="389.0" layoutY="476.0" mnemonicParsing="false" onAction="#updateUser" style="-fx-background-color: #40a84a;" text="Valider" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <JFXTextField fx:id="tctusername" focusColor="#40a84a" labelFloat="true" layoutX="80.0" layoutY="127.0" onMouseExited="#verifUsername" promptText="Saisir Pseudo" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtnom" focusColor="#40a84a" labelFloat="true" layoutX="330.0" layoutY="127.0" onMouseExited="#checkPrenom" promptText="Saisir Prénom" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtemail" focusColor="#40a84a" labelFloat="true" layoutX="80.0" layoutY="217.0" onMouseExited="#verifMail" promptText="Saisir Email" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtconf" focusColor="#40a84a" labelFloat="true" layoutX="80.0" layoutY="397.0" onMouseExited="#ConfPw" promptText="Confirmer mot de passe" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtpassword" focusColor="#40a84a" labelFloat="true" layoutX="80.0" layoutY="307.0" onMouseExited="#pw" promptText="Saisir Mot de Passe" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtlasname" focusColor="#40a84a" labelFloat="true" layoutX="330.0" layoutY="217.0" onMouseExited="#checkNom" promptText="Saisir Nom" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtville" focusColor="#40a84a" labelFloat="true" layoutX="580.0" layoutY="127.0" onMouseExited="#checkVille" promptText="Saisir Ville" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtrue" focusColor="#40a84a" labelFloat="true" layoutX="580.0" layoutY="217.0" onMouseExited="#checkRue" promptText="Saisir Rue" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtzipcode" focusColor="#40a84a" labelFloat="true" layoutX="580.0" layoutY="307.0" onMouseExited="#checkPostal" promptText="Saisir Code postal" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtphone" focusColor="#40a84a" labelFloat="true" layoutX="580.0" layoutY="397.0" onMouseExited="#checkTel" promptText="Saisir Numéro de Tél" unFocusColor="#40a84a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="pwverif" layoutX="81.0" layoutY="356.0" textFill="RED" />
+      <Label fx:id="confpass" layoutX="80.0" layoutY="446.0" textFill="RED" />
+      <Label fx:id="testmail" layoutX="80.0" layoutY="266.0" textFill="RED" />
+      <Label fx:id="testusername" layoutX="81.0" layoutY="175.0" textFill="RED" />
+      <Label fx:id="testprenom" layoutX="330.0" layoutY="175.0" textFill="RED" />
+      <Label fx:id="testnom" layoutX="330.0" layoutY="266.0" textFill="RED" />
+      <Label fx:id="testville" layoutX="580.0" layoutY="175.0" textFill="RED" />
+      <Label fx:id="testrue" layoutX="580.0" layoutY="266.0" textFill="RED" />
+      <Label fx:id="testpostal" layoutX="580.0" layoutY="356.0" textFill="RED" />
+      <Label fx:id="testtel" layoutX="580.0" layoutY="446.0" textFill="RED" />
+      <Label fx:id="errorReg" layoutX="535.0" layoutY="483.0" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#40a84a" glyphName="WRENCH" layoutX="108.0" layoutY="78.0" size="60" />
+      <Button layoutX="62.0" layoutY="486.0" mnemonicParsing="false" onAction="#Logout" text="Se déconnecter" textFill="RED">
+         <graphic>
+            <FontAwesomeIconView fill="RED" glyphName="UNDO" text="" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

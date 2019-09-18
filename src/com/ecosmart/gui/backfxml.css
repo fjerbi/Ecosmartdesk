@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.btn:hover{
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.btn:pressed{
+        -fx-scale-y: 0.9;
+        -fx-scale-x: 0.9;
+        -fx-blend-mode: "OVERLAY";
+}
+.AnchorPane {
+    -fx-background-image:url('file:/C:/wamp64/www/ecosmartdesk/src/ressources/img/gallery/599.jpg');
+}

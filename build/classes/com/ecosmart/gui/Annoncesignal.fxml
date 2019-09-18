@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anxc" minHeight="0.0" minWidth="0.0" prefHeight="403.0" prefWidth="684.0" style="-fx-background-color: #ECECEC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ecosmart.gui.AnnoncesignalController">
+   <children>
+      <Pane fx:id="pp" layoutX="149.0" layoutY="73.0" prefHeight="257.0" prefWidth="387.0" style="-fx-background-color: #FFFFFF; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);">
+         <children>
+            <Pane layoutX="14.0" layoutY="40.0" prefHeight="96.0" prefWidth="358.0" style="-fx-background-color: #DD4B39; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 10;">
+               <children>
+                  <Pane prefHeight="96.0" prefWidth="23.0" style="-fx-background-color: #B13C2E;" />
+                  <Label fx:id="pourcentage" layoutX="23.0" layoutY="6.0" prefHeight="17.0" prefWidth="159.0" text="Annonce Type: pollution" textFill="#463f3f" />
+                  <ProgressBar fx:id="progress1" layoutX="35.0" layoutY="44.0" minHeight="-Infinity" prefHeight="11.0" prefWidth="316.0" progress="0.27" style="-fx-pref-height: 10;" styleClass="ma-progress-bar" stylesheets="@stat.css" />
+                  <Label fx:id="tot1" layoutX="209.0" layoutY="65.0" text="NbreTotal des annonces">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.051546391752577324" />
+                              <Stop color="#39ee33" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="pr1" layoutX="130.0" layoutY="23.0" text="Label" />
+               </children>
+            </Pane>
+            <Label layoutX="30.0" layoutY="-2.0" prefHeight="33.0" prefWidth="352.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: black;" text="Nombre de signal par type" textOverrun="CENTER_WORD_ELLIPSIS" />
+            <Pane layoutX="14.0" layoutY="159.0" prefHeight="93.0" prefWidth="358.0" style="-fx-background-color: #DD4B39; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 10;">
+               <children>
+                  <Pane prefHeight="93.0" prefWidth="23.0" style="-fx-background-color: #B13C2E;" />
+                  <Label fx:id="pour1" layoutX="30.0" layoutY="14.0" prefHeight="17.0" prefWidth="196.0" text="Annonce Type: Probleme Municipalité" textFill="#463f3f" />
+                  <ProgressBar fx:id="progress2" layoutX="35.0" layoutY="48.0" minHeight="-Infinity" prefHeight="7.0" prefWidth="316.0" progress="0.36" style="-fx-pref-height: 10;" styleClass="ma-progress-bar" stylesheets="@stat.css" />
+                  <Label fx:id="tot2" layoutX="226.0" layoutY="58.0" stylesheets="@stat.css" text="NbreTotal des annonce">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="BLACK" />
+                              <Stop color="BLACK" offset="0.051546391752577324" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <Label fx:id="pr2" layoutX="136.0" layoutY="31.0" text="Label" />
+               </children>
+            </Pane>
+            <Button fx:id="btn" layoutX="87.0" layoutY="280.0" mnemonicParsing="false" onAction="#onload" style="-fx-background-color: #00C0EF;" text="Convertir en pdf" />
+            <Button layoutX="265.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #00C0EF;" text="Retour" />
+         </children>
+      </Pane>
+      <Label fx:id="labeltitle" layoutX="171.0" layoutY="21.0" prefHeight="33.0" prefWidth="400.0" text="Statistiques des Annonces Par nombre de signals" textFill="#dd4b39">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="87.0" layoutX="71.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../ressources/img/icons/bars-chart-1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
